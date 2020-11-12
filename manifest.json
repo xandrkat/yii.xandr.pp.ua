@@ -1,0 +1,44 @@
+{
+    "name": "Yii 2 Starter Kit",
+    "id": "yii2-starter-kit",
+    "packaging_format": 1,
+    "description": {
+        "en": "Yii 2 Starter Kit"
+    },
+    "url": "https://www.yiiframework.com/",
+    "version": "1.0",
+    "license": "free",
+    "maintainer": {
+        "name": "xandrkat",
+        "email": "katrazhenko@gmail.com"
+    },
+    "requirements": {
+        "yunohost": ">= 2.4.0"
+    },
+    "multi_instance": true,
+    "services": [
+        "php7.4",
+        "mysql"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for Yii 2 Starter Kit"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for Yii 2 Starter Kit"
+                },
+                "example": "/yii.xandr.pp.ua",
+                "default": "/yii.xandr.pp.ua"
+            }
+        ]
+    }
+}
